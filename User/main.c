@@ -54,7 +54,7 @@ static void AppTaskCreate(void)
 		&LED_Task_Handle
 	);
 	
-	vTaskDelete(AppTaskCreate_Handle);
+	vTaskDelete(NULL);
 	
 	taskEXIT_CRITICAL();
 }
